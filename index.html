@@ -10,31 +10,6 @@
 </head>
 
 <body>
-  <!-- svg inline -->
-  <svg class="svg-inline">
-    <symbol viewBox="0 0 16 16" id="eva_phone-outline">
-      <path d="M11.6 14.667A10.28 10.28 0 011.333 4.4 3.067 3.067 0 014.4 1.333c.172-.001.344.015.513.047.164.024.325.064.48.12a.667.667 0 01.434.5l.913 4a.667.667 0 01-.173.613c-.087.094-.094.1-.914.527A6.607 6.607 0 008.9 10.4c.433-.827.44-.833.533-.92a.667.667 0 01.614-.173l4 .913a.667.667 0 01.48.433 2.89 2.89 0 01.166.994 3.067 3.067 0 01-3.093 3.02zm-7.2-12A1.74 1.74 0 002.667 4.4a8.94 8.94 0 008.933 8.933 1.74 1.74 0 001.733-1.733v-.22l-3.093-.713-.193.366c-.3.58-.52 1-1.08.774A7.9 7.9 0 014.18 7c-.24-.52.213-.76.787-1.06l.366-.18-.713-3.093H4.4z" fill="#969696"/>
-    </symbol>
-    <symbol viewBox="3 0 14 14" id="ic_sharp-log-in">
-      <g filter="url(#ic:sharp-log-in__filter0_d)" fill="#969696">
-        <path d="M8.25 1.167h5.25a1.17 1.17 0 011.167 1.166v9.334a1.17 1.17 0 01-1.167 1.166H8.25a1.17 1.17 0 01-1.167-1.166V10.5H8.25v1.167h5.25V2.333H8.25V3.5H7.083V2.333A1.17 1.17 0 018.25 1.167z"/>
-        <path d="M8.886 9.094l.822.823L12.625 7 9.708 4.083l-.822.823 1.505 1.51H4.75v1.167h5.64L8.887 9.094z"/>
-      </g>
-      <defs>
-        <filter id="ic:sharp-log-in__filter0_d" x="-1" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-          <feOffset dy="4"/>
-          <feGaussianBlur stdDeviation="2"/>
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
-          <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-      </defs>
-    </symbol>
-  </svg>
-  <!-- svg inline end -->
-
   <!-- page -->
   <div class="page">
 
@@ -44,13 +19,14 @@
         <div class="top-line__inner">
           <div class="top-line-info">
             <div class="top-line-info__icon">
-              <svg class="svg-inline-icon">
-                <use xlink:href="#eva_phone-outline"></use>
+              <svg class="svg-inline-icon" role='img' title='phone'>
+                <use xlink:href="img/i/sprite.svg#eva_phone-outline"></use>
               </svg>
             </div>
-            <a href="tel:88121234567" class="number top-line-info__item">
-              8 (812) 123-45-67
-            </a>
+            <div class="top-line-info__item">
+              <a href="tel:88121234567" class="top-line-info__number">8 (812) 123-45-67</a>
+            </div>
+            
             <span class="top-line-info__item">
               Работаем 7&nbsp;дней в&nbsp;неделю
             </span>
@@ -61,7 +37,7 @@
            <!-- top-line-user -->
           <div class="top-line-user">
             <svg class='top-line-user__icon svg-inline-icon' role='img' title='login'>
-              <use xlink:href="#ic_sharp-log-in"></use>
+              <use xlink:href="img/i/sprite.svg#ic_sharp-log-in"></use>
             </svg>
             <div class="top-line-user__item top-line-user__item_login">
               <a href='#' class="top-line-user__link">Войти</a>
@@ -71,10 +47,58 @@
             </div>
           </div>
           <!-- top-line-user end -->
+
         </div>
       </div>
     </div>
     <!-- /.top-line -->
+
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="main-logo">
+            <img src="img/main-logo.svg" alt="Main logo">
+          </div>
+
+          <!-- nav -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Понравилось</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Личный кабинет</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Настройки</a></li>
+              <li class="nav__item">
+
+                <!-- Nav item Sub-list -->
+                <ul class="nav__sub-list">
+                  <li class="nav__sub-item">
+                    <!-- Link icon -->
+                    <a href="#" class="nav__sub-link">
+                      <svg class="svg-inline-icon nav__icon">
+                        <use xlink:href="img/i/sprite.svg#search"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav__sub-item">
+                    <!-- Link icon -->
+                    <a href="#" class="nav__sub-link">
+                      <svg class="svg-inline-icon nav__icon">
+                        <use xlink:href="img/i/sprite.svg#basket"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                 <!-- / Nav item Sub-list -->
+
+              </li>
+            </ul>
+          </nav>
+          <!-- nav end -->
+
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
   </div>
   <!-- ./page -->
 
