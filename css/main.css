@@ -175,4 +175,50 @@ body {
   font-size: 2.2rem;
   vertical-align: middle;
 }
+
+.hero {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  background-image: url("../img/hero.jpg");
+  background: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.hero__logo {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  padding: 9rem 7rem;
+  border: 2px solid #fff;
+}
+
+.hero__img-box {
+  min-width: 18.5rem;
+  align-self: center;
+  border-bottom: 2px solid #fff;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero__title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  max-width: 73rem;
+  text-transform: uppercase;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
