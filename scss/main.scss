@@ -91,6 +91,7 @@ body {
 .top-line-info {
   &__icon {
     margin-right: 15px;
+    font-size: 1.6rem;
   }
 
   &__number {
@@ -119,6 +120,7 @@ body {
 
   &__icon {
     margin-right: 10px;
+    font-size: 2rem;
   }
 
   &__item {
@@ -138,10 +140,6 @@ body {
   }
 }
 
-.top-line-info__icon,
-.top-line-user__icon {
-  font-size: 1.1429em;
-}
 
 // Name.header
 

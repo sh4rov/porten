@@ -24,7 +24,7 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .top-line-info, .top-line-user, .top-line-user__icon, .top-line-info__icon { display: flex; align-items: center; }
 
-.top-line-info__icon { margin-right: 15px; }
+.top-line-info__icon { margin-right: 15px; font-size: 1.6rem; }
 
 .top-line-info__number { text-decoration: none; color: currentColor; }
 
@@ -38,15 +38,13 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .top-line-user { display: flex; align-items: center; }
 
-.top-line-user__icon { margin-right: 10px; }
+.top-line-user__icon { margin-right: 10px; font-size: 2rem; }
 
 .top-line-user__item { flex: 1; }
 
 .top-line-user__item_login::after { content: '/'; font-size: 1.65rem; margin-left: 5px; margin-right: 5px; color: #989898; }
 
 .top-line-user__link { text-decoration: none; }
-
-.top-line-info__icon, .top-line-user__icon { font-size: 1.1429em; }
 
 .header { background-color: #0f0f0f; }
 
