@@ -1,7 +1,3 @@
-.outline {
-  outline: .5px solid currentColor;
-}
-
 :root {
   --container-size: 1130px;
   --container-ident: 20px;
@@ -34,15 +30,14 @@ body {
   margin-right: auto;
 }
 
-.svg-inline {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
 .svg-inline-icon {
   width: 1em;
   height: 1em;
+}
+
+.h-lvl-2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
 }
 
 .top-line {
@@ -99,7 +94,7 @@ body {
 }
 
 .top-line-info__item:not(:last-child)::after {
-  content: '|';
+  content: "|";
   display: inline-block;
 }
 
@@ -118,7 +113,7 @@ body {
 }
 
 .top-line-user__item_login::after {
-  content: '/';
+  content: "/";
   font-size: 1.65rem;
   margin-left: 5px;
   margin-right: 5px;
@@ -151,7 +146,7 @@ body {
   color: #989898;
   text-decoration: none;
   font-size: 1.4rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav__link:hover, .nav__sub-link:hover {
@@ -165,7 +160,7 @@ body {
 
 .nav__sub-link {
   padding: 3rem 2rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav__icon {
@@ -217,5 +212,11 @@ body {
   max-width: 73rem;
   text-transform: uppercase;
   text-align: center;
+}
+
+.watch-card {
+  display: inline-block;
+  padding: 55px 22px;
+  background-color: #191b1c;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 3rem 2rem;
+    color: $text-clr-second;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: currentColor;
+      background-color: #1f1f1f;
+    }
+  }
+
+  &__sub-list {
+    margin-left: 20px;
+    @extend .nav__list;
+  }
+
+  &__sub-link {
+    padding: 3rem 2rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__sub-link:hover {
+    @extend .nav__link:hover;
+  }
+
+  &__icon {
+    font-size: 2.2rem;
+    vertical-align: middle;
+  }
+}
