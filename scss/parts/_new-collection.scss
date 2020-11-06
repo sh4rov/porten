@@ -1,0 +1,5 @@
+.new-collection {
+  display: flex;
+  flex: 1 1 auto;
+  @include background-image('new-collection-bg.jpg', cover, center);
+}

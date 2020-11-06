@@ -30,6 +30,10 @@ body {
   margin-right: auto;
 }
 
+.row {
+  display: flex;
+}
+
 .svg-inline-icon {
   width: 1em;
   height: 1em;
@@ -283,5 +287,13 @@ body {
 .watch-card__price {
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+.new-collection {
+  display: flex;
+  flex: 1 1 auto;
+  background-image: url("../img/new-collection-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
