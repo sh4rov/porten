@@ -12,6 +12,12 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .col { display: flex; flex-flow: column; }
 
+.inline-col { display: inline-flex; flex-flow: column nowrap; }
+
+.section-primary { min-width: 1040px; }
+
+.section-secondary { max-width: 50%; flex-grow: 1; }
+
 .btn { flex-grow: 0; padding: .66em 1.55em; text-decoration: none; color: currentColor; font-size: 1.8rem; text-transform: uppercase; border: 1px solid currentColor; transition: border .2s ease-in-out; }
 
 .btn:hover { border: 1px solid transparent; }
@@ -113,4 +119,14 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 .new-collection__title { margin-top: auto; padding-bottom: .84em; margin-bottom: 3rem; }
 
 .new-collection__link { line-height: 1; }
+
+.collections-preview { flex: 1 auto; overflow: hidden; }
+
+.collections-preview__img { margin-left: -35px; }
+
+.collections { --collections-ident: 100px; align-items: center; padding-top: var(--collections-ident); padding-bottom: var(--collections-ident); }
+
+.collections__title { padding-bottom: 1.111111em; margin-bottom: 40px; }
+
+.collections__description { max-width: 470px; margin-bottom: 60px; text-align: center; }
 /*# sourceMappingURL=main.min.css.map */

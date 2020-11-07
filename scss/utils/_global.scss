@@ -7,6 +7,20 @@
   flex-flow: column;
 }
 
+.inline-col {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.section-primary {
+  min-width: 1040px;
+}
+
+.section-secondary {
+  max-width: 50%;
+  flex-grow: 1;
+}
+
 .btn {
   flex-grow: 0;
   padding: .66em 1.55em;

@@ -1,0 +1,18 @@
+.collections {
+  --collections-ident: 100px;
+
+  align-items: center;
+  padding-top: var(--collections-ident);
+  padding-bottom: var(--collections-ident);
+
+  &__title {
+    padding-bottom: 1.111111em;
+    margin-bottom: 40px;
+  }
+  
+  &__description {
+    max-width: 470px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}

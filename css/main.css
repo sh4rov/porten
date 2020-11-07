@@ -39,6 +39,20 @@ body {
   flex-flow: column;
 }
 
+.inline-col {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.section-primary {
+  min-width: 1040px;
+}
+
+.section-secondary {
+  max-width: 50%;
+  flex-grow: 1;
+}
+
 .btn {
   flex-grow: 0;
   padding: .66em 1.55em;
@@ -337,5 +351,32 @@ body {
 
 .new-collection__link {
   line-height: 1;
+}
+
+.collections-preview {
+  flex: 1 auto;
+  overflow: hidden;
+}
+
+.collections-preview__img {
+  margin-left: -35px;
+}
+
+.collections {
+  --collections-ident: 100px;
+  align-items: center;
+  padding-top: var(--collections-ident);
+  padding-bottom: var(--collections-ident);
+}
+
+.collections__title {
+  padding-bottom: 1.111111em;
+  margin-bottom: 40px;
+}
+
+.collections__description {
+  max-width: 470px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
