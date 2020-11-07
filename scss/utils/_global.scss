@@ -2,6 +2,26 @@
   display: flex;
 }
 
+.col {
+  display: flex;
+  flex-flow: column;
+}
+
+.btn {
+  flex-grow: 0;
+  padding: .66em 1.55em;
+  text-decoration: none;
+  color: currentColor;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  transition: border .2s ease-in-out;
+
+  &:hover {
+    border: 1px solid transparent;
+  }
+}
+
 .svg-inline-icon {
   width: 1em;
   height: 1em;
@@ -11,6 +31,8 @@
   font-family: $font-second;
   font-size: 3.6rem;
   line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .h-underline {

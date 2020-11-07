@@ -1,5 +1,25 @@
 .new-collection {
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
   flex: 1 1 auto;
   @include background-image('new-collection-bg.jpg', cover, center);
+  padding: 200px 150px;
+
+  &__body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: auto;
+    padding-bottom: .84em;
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    line-height: 1;
+  }
 }

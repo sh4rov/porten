@@ -34,6 +34,26 @@ body {
   display: flex;
 }
 
+.col {
+  display: flex;
+  flex-flow: column;
+}
+
+.btn {
+  flex-grow: 0;
+  padding: .66em 1.55em;
+  text-decoration: none;
+  color: currentColor;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  transition: border .2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid transparent;
+}
+
 .svg-inline-icon {
   width: 1em;
   height: 1em;
@@ -43,6 +63,8 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 3.6rem;
   line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .h-underline {
@@ -291,9 +313,29 @@ body {
 
 .new-collection {
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
   flex: 1 1 auto;
   background-image: url("../img/new-collection-bg.jpg");
   background-size: cover;
   background-position: center;
+  padding: 200px 150px;
+}
+
+.new-collection__body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.new-collection__title {
+  margin-top: auto;
+  padding-bottom: .84em;
+  margin-bottom: 3rem;
+}
+
+.new-collection__link {
+  line-height: 1;
 }
 /*# sourceMappingURL=main.css.map */
