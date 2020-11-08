@@ -424,4 +424,33 @@ body {
   margin-top: calc(var(--watchCard-baseGap) * 2);
   margin-bottom: calc(var(--watchCard-baseGap) * 2);
 }
+
+.brands {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #0f0f0f;
+}
+
+.brands__title {
+  padding-bottom: 1.1111em;
+  margin-bottom: 40px;
+}
+
+.brands__body {
+  --logo-idents: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: calc(-1 * var(--logo-idents));
+}
+
+.brands__logo {
+  max-width: 255px;
+  margin: var(--logo-idents);
+  flex: 1 0 auto;
+}
+
+.brands__img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
