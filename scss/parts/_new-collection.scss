@@ -3,9 +3,15 @@
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  flex: 1 1 auto;
-  @include background-image('new-collection-bg.jpg', cover, center);
-  padding: 200px 150px;
+  padding-left: 150px;
+  padding-bottom: 200px;
+  @include background-image('new-collection-bg.jpg', cover, center, no-repeat);
+  background: linear-gradient(
+    to right,
+    rgba(15, 15, 15, 0.5),
+    rgba(15, 15, 15, 0.5)
+  ),
+  url("../img/new-collection-bg.jpg");
 
   &__body {
     display: flex;

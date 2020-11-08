@@ -1,5 +1,5 @@
 :root {
-  --container-size: 1130px;
+  --container-size: 1150px;
   --container-ident: 20px;
 }
 
@@ -34,6 +34,10 @@ body {
   display: flex;
 }
 
+.jcc {
+  justify-content: center;
+}
+
 .col {
   display: flex;
   flex-flow: column;
@@ -45,11 +49,12 @@ body {
 }
 
 .section-primary {
-  min-width: 1040px;
+  max-width: 1040px;
+  flex: 1;
 }
 
 .section-secondary {
-  max-width: 50%;
+  max-width: 880px;
   flex-grow: 1;
 }
 
@@ -297,7 +302,6 @@ body {
 .watch-card {
   display: inline-flex;
   flex-flow: column nowrap;
-  flex: 1 1 auto;
 }
 
 .watch-card__img-wrap {
@@ -330,11 +334,13 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  flex: 1 1 auto;
+  padding-left: 150px;
+  padding-bottom: 200px;
   background-image: url("../img/new-collection-bg.jpg");
   background-size: cover;
   background-position: center;
-  padding: 200px 150px;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/new-collection-bg.jpg");
 }
 
 .new-collection__body {
@@ -354,12 +360,20 @@ body {
 }
 
 .collections-preview {
+  position: relative;
   flex: 1 auto;
   overflow: hidden;
 }
 
-.collections-preview__img {
-  margin-left: -35px;
+.collections-preview::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(15, 15, 15, 0.5);
+  pointer-events: none;
 }
 
 .collections {
@@ -378,5 +392,36 @@ body {
   max-width: 470px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+.new-arrivals {
+  --watchCard-baseGap: 10px;
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+}
+
+.new-arrivals__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: calc(var(--watchCard-baseGap) * -1);
+  margin-right: calc(var(--watchCard-baseGap) * -1);
+  margin-top: calc(var(--watchCard-baseGap) * -2);
+  margin-bottom: calc(var(--watchCard-baseGap) * -2);
+}
+
+.new-arrivals__title {
+  padding-bottom: 1.1111em;
+  margin-bottom: 8rem;
+}
+
+.new-arrivals__watch-card {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  margin-right: var(--watchCard-baseGap);
+  margin-left: var(--watchCard-baseGap);
+  margin-top: calc(var(--watchCard-baseGap) * 2);
+  margin-bottom: calc(var(--watchCard-baseGap) * 2);
 }
 /*# sourceMappingURL=main.css.map */

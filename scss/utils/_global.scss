@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.jcc {
+  justify-content: center;
+}
+
 .col {
   display: flex;
   flex-flow: column;
@@ -13,11 +17,12 @@
 }
 
 .section-primary {
-  min-width: 1040px;
+  max-width: 1040px;
+  flex: 1;
 }
 
 .section-secondary {
-  max-width: 50%;
+  max-width: 880px;
   flex-grow: 1;
 }
 

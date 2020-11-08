@@ -1,4 +1,4 @@
-:root { --container-size: 1130px; --container-ident: 20px; }
+:root { --container-size: 1150px; --container-ident: 20px; }
 
 html { box-sizing: border-box; font-size: 62.5%; }
 
@@ -10,13 +10,15 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .row { display: flex; }
 
+.jcc { justify-content: center; }
+
 .col { display: flex; flex-flow: column; }
 
 .inline-col { display: inline-flex; flex-flow: column nowrap; }
 
-.section-primary { min-width: 1040px; }
+.section-primary { max-width: 1040px; flex: 1; }
 
-.section-secondary { max-width: 50%; flex-grow: 1; }
+.section-secondary { max-width: 880px; flex-grow: 1; }
 
 .btn { flex-grow: 0; padding: .66em 1.55em; text-decoration: none; color: currentColor; font-size: 1.8rem; text-transform: uppercase; border: 1px solid currentColor; transition: border .2s ease-in-out; }
 
@@ -100,7 +102,7 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .new-season__watch-card { flex: 1 1 auto; margin: 25px; }
 
-.watch-card { display: inline-flex; flex-flow: column nowrap; flex: 1 1 auto; }
+.watch-card { display: inline-flex; flex-flow: column nowrap; }
 
 .watch-card__img-wrap { margin-bottom: 25px; padding: 55px 22px; background-color: #191b1c; }
 
@@ -112,7 +114,7 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .watch-card__price { font-size: 1.6rem; font-weight: 700; }
 
-.new-collection { display: flex; flex-flow: column nowrap; justify-content: flex-end; align-items: flex-start; flex: 1 1 auto; background-image: url("../img/new-collection-bg.jpg"); background-size: cover; background-position: center; padding: 200px 150px; }
+.new-collection { display: flex; flex-flow: column nowrap; justify-content: flex-end; align-items: flex-start; padding-left: 150px; padding-bottom: 200px; background-image: url("../img/new-collection-bg.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; background: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/new-collection-bg.jpg"); }
 
 .new-collection__body { display: flex; flex-flow: column; align-items: center; }
 
@@ -120,13 +122,21 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .new-collection__link { line-height: 1; }
 
-.collections-preview { flex: 1 auto; overflow: hidden; }
+.collections-preview { position: relative; flex: 1 auto; overflow: hidden; }
 
-.collections-preview__img { margin-left: -35px; }
+.collections-preview::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(15, 15, 15, 0.5); pointer-events: none; }
 
 .collections { --collections-ident: 100px; align-items: center; padding-top: var(--collections-ident); padding-bottom: var(--collections-ident); }
 
 .collections__title { padding-bottom: 1.111111em; margin-bottom: 40px; }
 
 .collections__description { max-width: 470px; margin-bottom: 60px; text-align: center; }
+
+.new-arrivals { --watchCard-baseGap: 10px; padding-top: 12rem; padding-bottom: 15rem; }
+
+.new-arrivals__body { display: flex; flex-wrap: wrap; align-items: center; margin-left: calc(var(--watchCard-baseGap) * -1); margin-right: calc(var(--watchCard-baseGap) * -1); margin-top: calc(var(--watchCard-baseGap) * -2); margin-bottom: calc(var(--watchCard-baseGap) * -2); }
+
+.new-arrivals__title { padding-bottom: 1.1111em; margin-bottom: 8rem; }
+
+.new-arrivals__watch-card { display: flex; justify-content: center; flex: 1 1 auto; margin-right: var(--watchCard-baseGap); margin-left: var(--watchCard-baseGap); margin-top: calc(var(--watchCard-baseGap) * 2); margin-bottom: calc(var(--watchCard-baseGap) * 2); }
 /*# sourceMappingURL=main.min.css.map */

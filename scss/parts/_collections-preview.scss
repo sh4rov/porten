@@ -1,6 +1,11 @@
 .collections-preview {
+  position: relative;
   flex: 1 auto;
   overflow: hidden;
 
-  &__img { margin-left: -35px; }
+  &::after {
+    @include absolute-stretch;
+    background-color: rgba(15, 15, 15, 0.5);
+    pointer-events: none;
+  }
 }
