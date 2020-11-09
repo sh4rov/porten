@@ -1,5 +1,6 @@
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jcc {
@@ -52,6 +53,14 @@
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+}
+
+.h-lvl-3 {
+  font-family: $font-second;
+  font-size: 2.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .h-underline {

@@ -32,6 +32,7 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .jcc {
@@ -84,6 +85,14 @@ body {
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+}
+
+.h-lvl-3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .h-underline {
@@ -452,5 +461,98 @@ body {
 
 .brands__img {
   max-width: 100%;
+}
+
+.footer {
+  --footerCol-gutter: 15px;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background: linear-gradient(to right, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url("../img/footer.jpg") center/cover no-repeat;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    background: linear-gradient(to right, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url("../img/footer-600w.jpg") center/cover no-repeat;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: calc(-1 * var(--footerCol-gutter));
+}
+
+.footer-col {
+  display: flex;
+  flex-flow: column wrap;
+  margin: var(--footerCol-gutter);
+}
+
+.footer-col_limited {
+  max-width: 350px;
+}
+
+.footer-col_category {
+  flex-grow: 1;
+  min-width: 285px;
+}
+
+.footer-col__title {
+  margin-bottom: 40px;
+}
+
+.footer-col_mailing .footer-col__description {
+  margin-bottom: 35px;
+}
+
+.category {
+  --category-gutter: 10px;
+}
+
+.category ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--category-gutter));
+}
+
+.category li {
+  margin: var(--category-gutter);
+}
+
+.category a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1.428em;
+  background-color: #0f0f0f;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.form__body {
+  display: flex;
+}
+
+.form__item {
+  padding: 15px 20px;
+  border-style: none;
+}
+
+.form__item_email {
+  max-width: 210px !important;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #989898;
+}
+
+.form__item_email::placeholder {
+  color: #989898;
+}
+
+.form__item_btn {
+  background-color: #0f0f0f;
+}
+
+.form__item_btn span {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

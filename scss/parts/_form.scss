@@ -1,0 +1,29 @@
+.form {
+
+  &__body {
+    display: flex;
+  }
+
+  &__item {
+    padding: 15px 20px;
+    border-style: none;
+
+    &_email {
+      max-width: 210px !important;
+      background-color: rgba(#fff, .4);
+      color: $text-clr-second;
+    }
+
+    &_email::placeholder {
+      color: $text-clr-second;
+    }
+
+    &_btn {
+      background-color: #0f0f0f;
+    }
+
+    &_btn span {
+      color: $text-clr-primary;
+    }
+  }
+}

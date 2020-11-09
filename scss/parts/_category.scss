@@ -1,0 +1,22 @@
+.category {
+  --category-gutter: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--category-gutter));
+  }
+
+  li {
+    margin: var(--category-gutter);
+  }
+
+  a {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1.428em;
+    background-color: #0f0f0f;
+    color: currentColor;
+    text-decoration: none;
+  }
+}
