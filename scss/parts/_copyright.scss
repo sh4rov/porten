@@ -1,0 +1,19 @@
+.copy {
+  background-color: #0f0f0f;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+
+    &_link {
+      color: $text-clr-primary;
+      font-weight: 700;
+    }
+  }
+}

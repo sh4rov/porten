@@ -1,20 +1,22 @@
 .footer {
   --footerCol-gutter: 15px;
-  padding-top: 75px;
-  padding-bottom: 100px;
   
-  background: linear-gradient(
+  &__primary {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background: linear-gradient(
     to right,
     rgba(#0f0f0f, .85),
     rgba(#0f0f0f, .85)),
     url('../img/footer.jpg') center/cover no-repeat;
 
-  @media (max-width: 480px) {
-    background: linear-gradient(
-    to right,
-    rgba(#0f0f0f, .85),
-    rgba(#0f0f0f, .85)),
-    url('../img/footer-600w.jpg') center/cover no-repeat;
+    @media (max-width: 480px) {
+      background: linear-gradient(
+      to right,
+      rgba(#0f0f0f, .85),
+      rgba(#0f0f0f, .85)),
+      url('../img/footer-600w.jpg') center/cover no-repeat;
+    }
   }
 
   &__inner {
