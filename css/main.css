@@ -535,13 +535,18 @@ body {
 
 .form__item {
   padding: 15px 20px;
-  border-style: none;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
 }
 
 .form__item_email {
   max-width: 210px !important;
   background-color: rgba(255, 255, 255, 0.4);
   color: #989898;
+}
+
+.form__item_email:focus {
+  z-index: 1;
 }
 
 .form__item_email::placeholder {
