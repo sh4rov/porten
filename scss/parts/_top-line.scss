@@ -1,8 +1,9 @@
 .top-line {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  background-color: #000;
 
   &__inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,11 @@
 .top-line-info__icon {
   display: flex;
   align-items: center;
+}
+
+.top-line-info,
+.top-line-user {
+  display: inline-flex;
 }
 
 .top-line-info {

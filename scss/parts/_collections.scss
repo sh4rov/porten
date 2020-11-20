@@ -1,9 +1,11 @@
 .collections {
-  --collections-ident: 100px;
+  --collections-indent: 100px;
 
   align-items: center;
-  padding-top: var(--collections-ident);
-  padding-bottom: var(--collections-ident);
+  padding-top: var(--collections-indent);
+  padding-bottom: var(--collections-indent);
+  padding-left: 1em;
+  padding-right: 1em;
 
   &__title {
     padding-bottom: 1.111111em;

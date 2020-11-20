@@ -15,7 +15,7 @@
       color: $text-clr-second;
     }
 
-    &_email:focus {
+    &_email:foc {
       z-index: 1;
     }
 
@@ -25,6 +25,10 @@
 
     &_btn {
       background-color: #0f0f0f;
+    }
+
+    &_btn:hover {
+      cursor: pointer;
     }
 
     &_btn span {

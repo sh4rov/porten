@@ -1,6 +1,14 @@
+.fluid-container {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .jcc {
@@ -18,13 +26,15 @@
 }
 
 .section-primary {
-  max-width: 1040px;
-  flex: 1;
+  flex: 1 0 56%;
 }
 
 .section-secondary {
-  max-width: 880px;
-  flex-grow: 1;
+  width: 100%;
+}
+
+.content {
+  padding-top: 126px;
 }
 
 .btn {

@@ -22,6 +22,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: calc(-1 * var(--footerCol-gutter));
   }
 }
@@ -30,6 +31,7 @@
   display: flex;
   flex-flow: column wrap;
   margin: var(--footerCol-gutter);
+  flex: 0 0 30%;
 
   &_limited {
     max-width: 350px;
@@ -44,7 +46,8 @@
     margin-bottom: 40px;
   }
 
-  &_mailing &__description {
+  &_mailing, &__description {
     margin-bottom: 35px;
+    line-height: 1.5;
   }
 }

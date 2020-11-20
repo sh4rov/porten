@@ -1,10 +1,19 @@
 .header {
-  $header-bg: #0f0f0f;
-  background-color: $header-bg;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+
   
-  &__inner {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__bottom {
+    
+    background-color: #0f0f0f;
   }
 }

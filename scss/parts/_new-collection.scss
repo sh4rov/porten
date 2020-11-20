@@ -1,22 +1,32 @@
 .new-collection {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-left: 150px;
-  padding-bottom: 200px;
-  @include background-image('new-collection-bg.jpg', cover, center, no-repeat);
+  padding: 0 0 150px 0;
+  background-image: url('../img/new-collection-bg.jpg');
   background: linear-gradient(
     to right,
     rgba(15, 15, 15, 0.5),
     rgba(15, 15, 15, 0.5)
   ),
   url("../img/new-collection-bg.jpg");
+  @include background-image(cover, left, no-repeat);
+
+  @media (max-width: 1199px) {
+    padding: 150px 0 150px 0;
+    align-items: center;
+  }
 
   &__body {
-    display: flex;
     flex-flow: column;
     align-items: center;
+
+    @media(min-width: 1200px) {
+      transition: relative;
+      transform: translateX(20%);
+    }
   }
 
   &__title {

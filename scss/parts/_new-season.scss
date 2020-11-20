@@ -1,8 +1,7 @@
 .new-season {
   $card-gap: 25px;
   display: inline-flex;
-  max-width: 1040px;
-  padding: 90px 80px;
+  padding: 60px 55px;
   flex-direction: column;
 
   &__title {
@@ -14,11 +13,24 @@
 
   &__body {
     display: flex;
-    margin: -#{$card-gap};
   }
+
+  // &__body > * + * {
+  //   margin: 0 0 0 50px;
+  // }
 
   &__watch-card {
     flex: 1 1 auto;
-    margin: $card-gap;
+    padding: $card-gap;
+    border: .3em solid transparent;
+    transition: border-color .2s ease-in-out;
+
+    &:hover {
+      border-color: #1f1f1f;
+    }
+
+    &:hover .watch-card__img-wrap {
+      background-color: transparent;
+    }
   }
 }

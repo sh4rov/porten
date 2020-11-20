@@ -1,490 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <title>Porter</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
-  <title>Porter</title>
-</head>
+  <body>
+    <!-- ** page ** -->
+    <div class="page">
+      <!-- ** header ** -->
+      <header class="header">
+        <!-- ** header__top ** -->
+        <div class="top-line">
+          <div class="container">
+            <div class="top-line__inner">
+              <!-- ** top-line-info ** -->
+              <div class="top-line-info">
+                <div class="top-line-info__icon">
+                  <svg class="svg-inline-icon" role="img">
+                    <use xlink:href="img/i/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="top-line-info__item">
+                  <a href="tel:88121234567" class="top-line-info__number"
+                    >8 (812) 123-45-67</a
+                  >
+                </div>
 
-<body>
-  <!-- ** page ** -->
-  <div class="page">
+                <span class="top-line-info__item">
+                  Работаем 7&nbsp;дней в&nbsp;неделю
+                </span>
+                <div class="top-line-info__item schedule">
+                  9:00&nbsp;&mdash; 18:00
+                </div>
+              </div>
+              <!-- end .top-line-info -->
+           
+              <!-- ** top-line-user ** -->
+              <div class="top-line-user">
+                <div class="top-line-user__icon">
+                  <!-- svg icon -->
+                  <svg class="svg-inline-icon" role="img">
+                    <use xlink:href="img/i/sprite.svg#login"></use>
+                  </svg>
+                </div>
 
-    <!-- ** top-line ** -->
-    <div class="top-line">
-      <div class="container">
-        <div class="top-line__inner">
-          <!-- ** top-line-info ** -->
-          <div class="top-line-info">
-            <div class="top-line-info__icon">
-              <svg class='svg-inline-icon' role='img'>
-                <use xlink:href="img/i/sprite.svg#phone"></use>
-              </svg>
+                <div class="top-line-user__item top-line-user__item_login">
+                  <a href="#" class="top-line-user__link">Войти</a>
+                </div>
+                <div class="top-line-user__item">
+                  <a href="#" class="top-line-user__link">Регистрация</a>
+                </div>
+              </div>
+              <!-- end .top-line-user -->
             </div>
-            <div class="top-line-info__item">
-              <a href="tel:88121234567" class="top-line-info__number">8 (812) 123-45-67</a>
-            </div>
-
-            <span class="top-line-info__item">
-              Работаем 7&nbsp;дней в&nbsp;неделю
-            </span>
-            <div class="top-line-info__item schedule">9:00&nbsp;&mdash; 18:00</div>
-          </div>
-          <!-- end .top-line -->
-
-          <!-- ** top-line-user ** -->
-          <div class="top-line-user">
-            <div class="top-line-user__icon">
-              <!-- svg icon -->
-              <svg class='svg-inline-icon' role='img'>
-                <use xlink:href='img/i/sprite.svg#login'></use>
-              </svg>
-            </div>
-
-            <div class="top-line-user__item top-line-user__item_login">
-              <a href='#' class="top-line-user__link">Войти</a>
-            </div>
-            <div class="top-line-user__item">
-              <a href='#' class="top-line-user__link">Регистрация</a>
-            </div>
-          </div>
-          <!-- end .top-line-user -->
-
-        </div>
-      </div>
-    </div>
-    <!-- end .top-line -->
-
-    <!-- ** header ** -->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="main-logo">
-            <img src="img/main-logo.svg" alt="Main logo">
-          </div>
-
-          <!-- nav -->
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Понравилось</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Личный кабинет</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Настройки</a></li>
-              <li class="nav__item">
-
-                <!-- Nav item Sub-list -->
-                <ul class="nav__sub-list">
-                  <li class="nav__sub-item">
-                    <!-- Link icon -->
-                    <a href="#" class="nav__sub-link">
-                      <svg class="svg-inline-icon nav__icon">
-                        <use xlink:href="img/i/sprite.svg#search"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="nav__sub-item">
-                    <!-- Link icon -->
-                    <a href="#" class="nav__sub-link">
-                      <svg class="svg-inline-icon nav__icon">
-                        <use xlink:href="img/i/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <!-- / Nav item Sub-list -->
-
-              </li>
-            </ul>
-          </nav>
-          <!-- nav end -->
-
-        </div>
-      </div>
-    </header>
-    <!-- end .header -->
-
-    <!-- ** hero ** -->
-    <section class="section hero">
-      <div class="hero__content">
-        <div class="hero__logo">
-          <h1 class='hero__img-box'>
-            <img class='hero__img' src="img/main-logo.svg" alt="Человек в куртке">
-          </h1>
-          <span class="hero__title">Cанкт-Петербург</span>
-        </div>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut&nbsp;in.
-          Fringilla a&nbsp;diam enim sed justo, sed iaculis sagittis. Tortor id&nbsp;eu&nbsp;interdum nec
-          ut&nbsp;iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat
-          id&nbsp;nunc, dui nisl viverra.
-        </p>
-
-
-      </div>
-    </section>
-    <!-- end .hero -->
-
-    <!-- ** new collections row ** -->
-    <div class="row jcc">
-      <!-- ** new-season ** -->
-      <section class="new-season section-primary">
-        <h2 class="h-lvl-2 h-underline new-season__title">Сезон 2020/21</h2>
-        <div class="new-season__body">
-          <div class="new-season__watch-card">
-            <!-- ** watch-card ** -->
-            <article class="watch-card">
-              <div class="watch-card__img-wrap">
-                <picture>
-                  <source srcset='img/watch.webp' type='image/webp'>
-                  <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                </picture>
-              </div>
-              <div class="watch-card__body">
-                <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                <span class="watch-card__price">165 000 руб.</span>
-              </div>
-            </article>
-            <!-- end watch-card -->
-          </div>
-
-          <div class="new-season__watch-card">
-            <!-- ** watch-card ** -->
-            <article class="watch-card">
-              <div class="watch-card__img-wrap">
-                <picture>
-                  <source srcset='img/watch.webp' type='image/webp'>
-                  <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                </picture>
-              </div>
-              <div class="watch-card__body">
-                <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                <span class="watch-card__price">165 000 руб.</span>
-              </div>
-            </article>
-            <!-- end watch-card -->
-          </div>
-
-          <div class="new-season__watch-card">
-            <!-- ** watch-card ** -->
-            <article class="watch-card">
-              <div class="watch-card__img-wrap">
-                <picture>
-                  <source srcset='img/watch.webp' type='image/webp'>
-                  <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                </picture>
-              </div>
-              <div class="watch-card__body">
-                <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                <span class="watch-card__price">165 000 руб.</span>
-              </div>
-            </article>
-            <!-- end watch-card -->
           </div>
         </div>
-      </section>
-      <!-- end new-season -->
+        <!-- end .top-line -->
+        <div class="header__bottom">
+          <div class='container header__container'>
+            <div class="main-logo">
+              <img src="img/main-logo.svg" alt="Main logo" />
+            </div>
 
-      <!-- ** new-collection ** -->
-      <section class="new-collection section-secondary">
-        <div class="col new-collection__body">
-          <h2 class="h-lvl-2 h-underline new-collection__title">Новая коллекция</h2>
-          <a href="#" class="btn new-collection__link">Каталог</a>
-        </div>
-      </section>
-      <!-- end .new-collection -->
-    </div>
-    <!-- end new collections row -->
-
-    <!-- ** collections row ** -->
-    <div class="row jcc">
-      <!-- ** collections-preview ** -->
-      <div class="collections-preview section-secondary">
-        <picture>
-          <source media="(min-width: 600px)" srcset="img/collections-preview-880.webp" type="image/webp">
-          <source media="(min-width: 600px)" srcset="img/collections-preview-880.jpg">
-          <source srcset="img/collections-preview-440.webp" type="image/webp">
-          <source srcset="img/collections-preview-440.jpg">
-          <img class='collections-preview__img' src="img/collections-preview-880.jpg" alt="Мужчина в пиджаке">
-        </picture>
-      </div>
-      <!-- end .collections-preview -->
-
-      <section class="inline-col section-primary collections">
-        <h2 class="h-lvl-2 h-underline collections__title">
-          Коллекция 2018
-        </h2>
-        <p class="collections__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut&nbsp;mattis habitant dui arcu. Sagittis amet nunc ut&nbsp;neque quis nibh arcu. Vivamus vestibulum nisi et&nbsp;venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id&nbsp;aliquam a&nbsp;aliquam egestas leo orci pharetra sed diam.
-        </p>
-        <a href="#" class="btn collections__link">
-          Посмотреть коллекцию
-        </a>
-      </section>
-    </div>
-    <!-- end collections row -->
-
-    <!-- ** new-arrivals ** -->
-    <div class="new-arrivals">
-      <div class="container">
-        <section class="new-arrivals__inner">
-          <h2 class="h-lvl-2 h-underline new-arrivals__title">
-            Новые поступления
-          </h2>
-          <div class="new-arrivals__body">
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-            <div class="new-arrivals__watch-card">
-              <!-- ** watch-card ** -->
-              <article class="watch-card">
-                <div class="watch-card__img-wrap">
-                  <picture>
-                    <source srcset='img/watch.webp' type='image/webp'>
-                    <img class='watch-card__img' src='img/watch.jpg' alt='Watch Louis XVI ATHOS'>
-                  </picture>
-                </div>
-                <div class="watch-card__body">
-                  <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                  <span class="watch-card__price">165 000 руб.</span>
-                </div>
-              </article>
-              <!-- end watch-card -->
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-    <!--  end .new-arrivals -->
-
-    <!-- ** brands ** -->
-    <div class="brands">
-      <div class="container">
-        <section class="brands__inner">
-          <h2 class="brands__title h-lvl-2 h-underline">Наши бренды</h2>
-          <div class="brands__body">
-            <div class="brands__logo">
-              <img 
-                class='brands__img' 
-                srcset="img/brand-logo-500w.png 480w,
-                        img/brand-logo.png"
-                src="img/brand-logo.png" 
-                alt="Логотип компании Coco Fine Jewelry">
-            </div>
-            <div class="brands__logo">
-              <img 
-                class='brands__img' 
-                srcset="img/brand-logo-500w.png 480w,
-                        img/brand-logo.png"
-                src="img/brand-logo.png" 
-                alt="Логотип компании Coco Fine Jewelry">
-            </div>
-            <div class="brands__logo">
-              <img 
-                class='brands__img' 
-                srcset="img/brand-logo-500w.png 480w,
-                        img/brand-logo.png"
-                src="img/brand-logo.png" 
-                alt="Логотип компании Coco Fine Jewelry">
-            </div>
-            <div class="brands__logo">
-              <img 
-                class='brands__img' 
-                srcset="img/brand-logo-500w.png 480w,
-                        img/brand-logo.png"
-                src="img/brand-logo.png" 
-                alt="Логотип компании Coco Fine Jewelry">
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-    <!-- end .brands -->
-
-    <!-- ** footer ** -->
-    <footer class="footer">
-      <!-- ** footer__primary ** -->
-      <div class="footer__primary">
-        <div class="container">
-          <div class="footer__inner">
-            <!-- ** footer-col ** -->
-            <section class="footer-col footer-col_limited footer-col_about-shop">
-              <h3 class="footer-col__title h-lvl-3">О магазине</h3>
-              <div class="footer-col__body">
-                <p>
-                  Далеко-далеко за&nbsp;словесными горами в&nbsp;стране гласных и&nbsp;согласных, живут рыбные тексты. Возвращайся продолжил журчит деревни собрал живет путь лучше&nbsp;ее, текст парадигматическая необходимыми. Переписывается единственное что использовало, вдали ручеек пунктуация до&nbsp;подзаголовок силуэт. О, взобравшись предупредила?
-                </p>
-              </div>
-            </section>
-            <!-- end .footer-col -->
-            <!-- ** footer-col ** -->
-            <section class="footer-col footer-col_category">
-              <h3 class="footer-col__title h-lvl-3">
-                Категории
-              </h3>
-              <div class="footer-col__body">
-                <div class="category">
-                  <ul>
-                    <li><a href="#">часы</a></li>
-                    <li><a href="#">браслеты</a></li>
-                    <li><a href="#">ремни</a></li>
-                    <li><a href="#">ювелирные изделия</a></li>
-                    <li><a href="#">запонки</a></li>
+            <!-- nav -->
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Понравилось</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Личный кабинет</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Настройки</a>
+                </li>
+                <li class="nav__item">
+                  <!-- Nav item Sub-list -->
+                  <ul class="nav__sub-list">
+                    <li class="nav__sub-item">
+                      <!-- Link icon -->
+                      <a href="#" class="nav__sub-link">
+                        <svg class="svg-inline-icon nav__icon">
+                          <use xlink:href="img/i/sprite.svg#search"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="nav__sub-item">
+                      <!-- Link icon -->
+                      <a href="#" class="nav__sub-link">
+                        <svg class="svg-inline-icon nav__icon">
+                          <use xlink:href="img/i/sprite.svg#basket"></use>
+                        </svg>
+                      </a>
+                    </li>
                   </ul>
+                  <!-- / Nav item Sub-list -->
+                </li>
+              </ul>
+            </nav>
+            <!-- nav end -->
+          </div>
+        </div>
+      </header>
+      <!-- end .header -->
+
+      <main class="content">
+        <!-- ** hero ** -->
+        <section class="section hero">
+          <div class="hero__content">
+            <div class="hero__logo">
+              <h1 class="hero__img-box">
+                <img
+                  class="hero__img"
+                  src="img/main-logo.svg"
+                  alt="Человек в куртке"
+                />
+              </h1>
+              <span class="hero__title">Cанкт-Петербург</span>
+            </div>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+              interdum purus, est tortor pulvinar ut&nbsp;in. Fringilla
+              a&nbsp;diam enim sed justo, sed iaculis sagittis. Tortor
+              id&nbsp;eu&nbsp;interdum nec ut&nbsp;iaculis. Penatibus ullamcorper
+              ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna
+              feugiat id&nbsp;nunc, dui nisl viverra.
+            </p>
+          </div>
+        </section>
+        <!-- end .hero -->
+
+        <!-- ** new collections row ** -->
+        <div class="fluid-container">
+          <!-- ** new-season ** -->
+          <section class="new-season section-primary">
+            <h2 class="h-lvl-2 h-underline new-season__title">Сезон 2020/21</h2>
+            <div class="new-season__body">
+              <a class="new-season__watch-card" href='javascript:void(0)'>
+                <!-- ** watch-card ** -->
+                <article class="watch-card">
+                  <div class="watch-card__img-wrap">
+                    <picture>
+                      <source srcset="img/watch.webp" type="image/webp" />
+                      <img
+                        class="watch-card__img"
+                        src="img/watch.jpg"
+                        alt="Watch Louis XVI ATHOS"
+                      />
+                    </picture>
+                  </div>
+                  <div class="watch-card__body">
+                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                    <span class="watch-card__price">165 000 руб.</span>
+                  </div>
+                </article>
+                <!-- end watch-card -->
+              </a>
+
+              <a class="new-season__watch-card" href='javascript:void(0)'>
+                <!-- ** watch-card ** -->
+                <article class="watch-card">
+                  <div class="watch-card__img-wrap">
+                    <picture>
+                      <source srcset="img/watch.webp" type="image/webp" />
+                      <img
+                        class="watch-card__img"
+                        src="img/watch.jpg"
+                        alt="Watch Louis XVI ATHOS"
+                      />
+                    </picture>
+                  </div>
+                  <div class="watch-card__body">
+                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                    <span class="watch-card__price">165 000 руб.</span>
+                  </div>
+                </article>
+                <!-- end watch-card -->
+              </a>
+
+              <a class="new-season__watch-card" href='javascript:void(0)'>
+                <!-- ** watch-card ** -->
+                <article class="watch-card">
+                  <div class="watch-card__img-wrap">
+                    <picture>
+                      <source srcset="img/watch.webp" type="image/webp" />
+                      <img
+                        class="watch-card__img"
+                        src="img/watch.jpg"
+                        alt="Watch Louis XVI ATHOS"
+                      />
+                    </picture>
+                  </div>
+                  <div class="watch-card__body">
+                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                    <span class="watch-card__price">165 000 руб.</span>
+                  </div>
+                </article>
+                <!-- end watch-card -->
+              </a>
+            </div>
+          </section>
+          <!-- end new-season -->
+
+          <!-- ** new-collection ** -->
+          <section class="new-collection section-secondary">
+            <div class="col new-collection__body">
+              <h2 class="h-lvl-2 h-underline new-collection__title">
+                Новая коллекция
+              </h2>
+              <a href="#" class="btn new-collection__link">Каталог</a>
+            </div>
+          </section>
+          <!-- end .new-collection -->
+        </div>
+        <!-- end new collections row -->
+
+        <!-- ** collections row ** -->
+        <div class="fluid-container">
+          <!-- ** collections-preview ** -->
+          <div class="collections-preview section-secondary">
+            <picture>
+              <source
+                media="(min-width: 600px)"
+                srcset="img/collections-preview-880.webp"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="img/collections-preview-880.jpg"
+              />
+              <source
+                srcset="img/collections-preview-440.webp"
+                type="image/webp"
+              />
+              <source srcset="img/collections-preview-440.jpg" />
+              <img
+                class="collections-preview__img"
+                src="img/collections-preview-880.jpg"
+                alt="Мужчина в пиджаке"
+              />
+            </picture>
+          </div>
+          <!-- end .collections-preview -->
+
+          <section class="inline-col section-primary collections">
+            <h2 class="h-lvl-2 h-underline collections__title">Коллекция 2018</h2>
+            <p class="collections__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum
+              ornare ut&nbsp;mattis habitant dui arcu. Sagittis amet nunc
+              ut&nbsp;neque quis nibh arcu. Vivamus vestibulum nisi
+              et&nbsp;venenatis sed scelerisque magna consectetur. Amet convallis
+              quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum
+              interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla
+              malesuada integer. Aenean praesent viverra nulla nullam natoque
+              volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque
+              risus dignissim egestas. Id&nbsp;aliquam a&nbsp;aliquam egestas leo
+              orci pharetra sed diam.
+            </p>
+            <a href="#" class="btn collections__link"> Посмотреть коллекцию </a>
+          </section>
+        </div>
+        <!-- end collections row -->
+
+        <!-- ** new-arrivals ** -->
+        <div class="new-arrivals">
+          <div class="container">
+            <section class="new-arrivals__inner">
+              <h2 class="h-lvl-2 h-underline new-arrivals__title">
+                Новые поступления
+              </h2>
+              <div class="new-arrivals__body">
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
+                </div>
+                <div class="new-arrivals__watch-card">
+                  <!-- ** watch-card ** -->
+                  <article class="watch-card">
+                    <div class="watch-card__img-wrap">
+                      <picture>
+                        <source srcset="img/watch.webp" type="image/webp" />
+                        <img
+                          class="watch-card__img"
+                          src="img/watch.jpg"
+                          alt="Watch Louis XVI ATHOS"
+                        />
+                      </picture>
+                    </div>
+                    <div class="watch-card__body">
+                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                      <span class="watch-card__price">165 000 руб.</span>
+                    </div>
+                  </article>
+                  <!-- end watch-card -->
                 </div>
               </div>
             </section>
-            <!-- end .footer-col -->
+          </div>
+        </div>
+        <!--  end .new-arrivals -->
 
-            <!-- ** footer-col ** -->
-            <section class="footer-col footer-col_mailing footer-col_limited">
-              <h3 class="footer-col__title h-lvl-3">
-                Рассылка
-              </h3>
-              <div class="footer-col__body">
-                <p class="footer-col__description">Далеко-далеко за, словесными горами в&nbsp;стране гласных и&nbsp;согласных
-                  живут рыбные тексты.</p>
-                <div class="form">
-                  <form action=""></form>
-                  <div class="form__body">
-                    <input class='form__item form__item_email' type="email" placeholder="Ваша почта">
-                    <button class='form__item form__item_btn' type="">
-                      <span>Подписаться</span>
-                    </button>
+        <!-- ** brands ** -->
+        <div class="brands">
+          <div class="container">
+            <section class="brands__inner">
+              <h2 class="brands__title h-lvl-2 h-underline">Наши бренды</h2>
+              <div class="brands__body">
+                <div class="brands__logo">
+                  <img
+                    class="brands__img"
+                    srcset="img/brand-logo-500w.png 480w, img/brand-logo.png"
+                    src="img/brand-logo.png"
+                    alt="Логотип компании Coco Fine Jewelry"
+                  />
+                </div>
+                <div class="brands__logo">
+                  <img
+                    class="brands__img"
+                    srcset="img/brand-logo-500w.png 480w, img/brand-logo.png"
+                    src="img/brand-logo.png"
+                    alt="Логотип компании Coco Fine Jewelry"
+                  />
+                </div>
+                <div class="brands__logo">
+                  <img
+                    class="brands__img"
+                    srcset="img/brand-logo-500w.png 480w, img/brand-logo.png"
+                    src="img/brand-logo.png"
+                    alt="Логотип компании Coco Fine Jewelry"
+                  />
+                </div>
+                <div class="brands__logo">
+                  <img
+                    class="brands__img"
+                    srcset="img/brand-logo-500w.png 480w, img/brand-logo.png"
+                    src="img/brand-logo.png"
+                    alt="Логотип компании Coco Fine Jewelry"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- end .brands -->
+      </main>
+      <!-- ** footer ** -->
+      <footer class="footer">
+        <!-- ** footer__primary ** -->
+        <div class="footer__primary">
+          <div class="container">
+            <div class="footer__inner">
+              <!-- ** footer-col ** -->
+              <section
+                class="footer-col footer-col_limited footer-col_about-shop"
+              >
+                <h3 class="footer-col__title h-lvl-3">О магазине</h3>
+                <div class="footer-col__body">
+                  <p class='footer-col__description'>
+                    Далеко-далеко за&nbsp;словесными горами в&nbsp;стране
+                    гласных и&nbsp;согласных, живут рыбные тексты. Возвращайся
+                    продолжил журчит деревни собрал живет путь лучше&nbsp;ее,
+                    текст парадигматическая необходимыми. Переписывается
+                    единственное что использовало, вдали ручеек пунктуация
+                    до&nbsp;подзаголовок силуэт. О, взобравшись предупредила?
+                  </p>
+                </div>
+              </section>
+              <!-- end .footer-col -->
+              <!-- ** footer-col ** -->
+              <section class="footer-col footer-col_category">
+                <h3 class="footer-col__title h-lvl-3">Категории</h3>
+                <div class="footer-col__body">
+                  <div class="category">
+                    <ul>
+                      <li><a href="#">часы</a></li>
+                      <li><a href="#">браслеты</a></li>
+                      <li><a href="#">ремни</a></li>
+                      <li><a href="#">ювелирные изделия</a></li>
+                      <li><a href="#">запонки</a></li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- end .footer-col -->
+              </section>
+              <!-- end .footer-col -->
+
+              <!-- ** footer-col ** -->
+              <section class="footer-col footer-col_mailing footer-col_limited">
+                <h3 class="footer-col__title h-lvl-3">Рассылка</h3>
+                <div class="footer-col__body">
+                  <p class="footer-col__description">
+                    Далеко-далеко за, словесными горами в&nbsp;стране гласных
+                    и&nbsp;согласных живут рыбные тексты.
+                  </p>
+                  <div class="form">
+                    <form action=""></form>
+                    <div class="form__body">
+                      <input
+                        class="form__item form__item_email"
+                        type="email"
+                        placeholder="Ваша почта"
+                      />
+                      <button class="form__item form__item_btn" type="submit">
+                        <span>Подписаться</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- end .footer-col -->
+            </div>
           </div>
         </div>
-      </div>
-      <!-- end .footer__primary -->
-      <div class="footer__secondary">
-        <div class="copy">
-          <div class="copy__container container">
-            <span class="copy__item">&copy;&nbsp;2020 Все права защищены</span>
-            <a href='https://figma.info' class="copy__item copy__item_link">Сделано Figma.info</a>
+        <!-- end .footer__primary -->
+        <div class="footer__secondary">
+          <div class="copy">
+            <div class="copy__container container">
+              <span class="copy__item"
+                >&copy;&nbsp;2020 Все права защищены</span
+              >
+              <a href="https://figma.info" class="copy__item copy__item_link"
+                >Сделано Figma.info</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-
-  </div>
-  <!-- end .page-->
-  <script src='js/main.js'></script>
-</body>
-
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end .page-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
