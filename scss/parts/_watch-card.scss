@@ -2,16 +2,30 @@
   display: inline-flex;
   flex-flow: column nowrap;
 
-  & > *, & > a:visited {
+  &__item {
+    display: inline-block;
     text-decoration: none;
-  }
 
-  &:hover &__img-wrap {
-    background-color: transparent;
-  }
+    &:hover {
+      border-color: #1f1f1f;
+    }
 
-  &:hover &__img {
-    transform: scale(1.3);
+    &:hover .watch-card__img-wrap {
+      background-color: transparent;
+    }
+  
+    &:hover .watch-card__img {
+      transform: scale(1.3);
+    }
+
+    &:hover .watch-card__img-wrap {
+      background-color: transparent;
+    }
+
+    &:hover .watch-card__product-name {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
   }
 
   &__img-wrap {
@@ -42,6 +56,7 @@
   &__product-name {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    transition: underline .2s ease-in-out;
   }
 
   &__price {

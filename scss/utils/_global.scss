@@ -5,6 +5,13 @@
   @media (max-width: 1200px) {
     flex-direction: column;
   }
+
+  &_dark-gray {
+  
+    @media (max-width: 1200px) {
+      background-color: #0f0f0f;
+    }
+  }
 }
 
 .row {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="favicon.ico"
@@ -16,7 +17,7 @@
     <title>Porter</title>
   </head>
 
-  <body>
+  <body dir="ltr">
     <!-- ** page ** -->
     <div class="page">
       <!-- ** header ** -->
@@ -147,70 +148,78 @@
           <!-- ** new-season ** -->
           <section class="new-season section-primary">
             <h2 class="h-lvl-2 h-underline new-season__title">Сезон 2020/21</h2>
-            <div class="new-season__body">
-              <a class="new-season__watch-card" href='javascript:void(0)'>
-                <!-- ** watch-card ** -->
-                <article class="watch-card">
-                  <div class="watch-card__img-wrap">
-                    <picture>
-                      <source srcset="img/watch.webp" type="image/webp" />
-                      <img
-                        class="watch-card__img"
-                        src="img/watch.jpg"
-                        alt="Watch Louis XVI ATHOS"
-                      />
-                    </picture>
-                  </div>
-                  <div class="watch-card__body">
-                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                    <span class="watch-card__price">165 000 руб.</span>
-                  </div>
-                </article>
-                <!-- end watch-card -->
-              </a>
-
-              <a class="new-season__watch-card" href='javascript:void(0)'>
-                <!-- ** watch-card ** -->
-                <article class="watch-card">
-                  <div class="watch-card__img-wrap">
-                    <picture>
-                      <source srcset="img/watch.webp" type="image/webp" />
-                      <img
-                        class="watch-card__img"
-                        src="img/watch.jpg"
-                        alt="Watch Louis XVI ATHOS"
-                      />
-                    </picture>
-                  </div>
-                  <div class="watch-card__body">
-                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                    <span class="watch-card__price">165 000 руб.</span>
-                  </div>
-                </article>
-                <!-- end watch-card -->
-              </a>
-
-              <a class="new-season__watch-card" href='javascript:void(0)'>
-                <!-- ** watch-card ** -->
-                <article class="watch-card">
-                  <div class="watch-card__img-wrap">
-                    <picture>
-                      <source srcset="img/watch.webp" type="image/webp" />
-                      <img
-                        class="watch-card__img"
-                        src="img/watch.jpg"
-                        alt="Watch Louis XVI ATHOS"
-                      />
-                    </picture>
-                  </div>
-                  <div class="watch-card__body">
-                    <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                    <span class="watch-card__price">165 000 руб.</span>
-                  </div>
-                </article>
-                <!-- end watch-card -->
-              </a>
+            
+            <div class="swiper-container ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide new-season__slide">
+                  <a class="watch-card__item new-season__watch-card" href='javascript:void(0)'>
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </a>
+                </div>
+                <div class="swiper-slide new-season__slide">
+                  <a class="watch-card__item new-season__watch-card" href='javascript:void(0)'>
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </a>
+                </div>
+                <div class="swiper-slide new-season__slide">
+                  <a class="watch-card__item new-season__watch-card" href='javascript:void(0)'>
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </a>
+                </div>
+              </div>
             </div>
+          
           </section>
           <!-- end new-season -->
 
@@ -228,7 +237,7 @@
         <!-- end new collections row -->
 
         <!-- ** collections row ** -->
-        <div class="fluid-container">
+        <div class="fluid-container fluid-container_dark-gray">
           <!-- ** collections-preview ** -->
           <div class="collections-preview section-secondary">
             <picture>
@@ -282,166 +291,182 @@
                 Новые поступления
               </h2>
               <div class="new-arrivals__body">
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
-                <div class="new-arrivals__watch-card">
-                  <!-- ** watch-card ** -->
-                  <article class="watch-card">
-                    <div class="watch-card__img-wrap">
-                      <picture>
-                        <source srcset="img/watch.webp" type="image/webp" />
-                        <img
-                          class="watch-card__img"
-                          src="img/watch.jpg"
-                          alt="Watch Louis XVI ATHOS"
-                        />
-                      </picture>
-                    </div>
-                    <div class="watch-card__body">
-                      <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
-                      <span class="watch-card__price">165 000 руб.</span>
-                    </div>
-                  </article>
-                  <!-- end watch-card -->
-                </div>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
+                <a href="#" class="watch-card__item">
+                  <div class="new-arrivals__watch-card">
+                    <!-- ** watch-card ** -->
+                    <article class="watch-card">
+                      <div class="watch-card__img-wrap">
+                        <picture>
+                          <source srcset="img/watch.webp" type="image/webp" />
+                          <img
+                            class="watch-card__img"
+                            src="img/watch.jpg"
+                            alt="Watch Louis XVI ATHOS"
+                          />
+                        </picture>
+                      </div>
+                      <div class="watch-card__body">
+                        <h3 class="watch-card__product-name">Louis XVI ATHOS</h3>
+                        <span class="watch-card__price">165 000 руб.</span>
+                      </div>
+                    </article>
+                    <!-- end watch-card -->
+                  </div>
+                </a>
               </div>
             </section>
           </div>
@@ -576,6 +601,7 @@
       <!-- end footer -->
     </div>
     <!-- end .page-->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
