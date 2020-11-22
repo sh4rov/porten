@@ -31,10 +31,17 @@
   display: flex;
   flex-flow: column wrap;
   margin: var(--footerCol-gutter);
-  flex: 0 0 30%;
+  
+  @media screen and (min-width: 641px) {
+    flex: 1 1 30%;
 
-  &_limited {
-    max-width: 350px;
+    &_limited {
+      max-width: 350px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    text-align: center;
   }
 
   &_category {
