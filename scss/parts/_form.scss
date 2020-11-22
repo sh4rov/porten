@@ -2,6 +2,7 @@
 
   &__body {
     display: flex;
+    flex-wrap: wrap;
 
     @media (max-width: 440px) {
       justify-content: center;
@@ -12,11 +13,15 @@
     padding: 15px 20px;
     border: 1px solid transparent;
     transition: all .3s ease-in-out;
+    
+    @media (max-width: 440px) {
+      flex: 1;
+    }
 
     &_email {
-      max-width: 210px !important;
+      min-width: 210px;
       background-color: rgba(#fff, .4);
-      color: $text-clr-second;
+      color: #fff;
     }
 
     &_email:focus {
