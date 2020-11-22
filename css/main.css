@@ -337,13 +337,23 @@ body {
   transition: border-color .2s ease-in-out;
 }
 
+.new-season__swiper-container {
+  width: 100%;
+}
+
+.new-season__swiper-slide {
+  display: inline-flex;
+  justify-content: center;
+}
+
 .watch-card {
   display: inline-flex;
   flex-flow: column nowrap;
 }
 
 .watch-card__item {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   text-decoration: none;
 }
 
@@ -616,6 +626,10 @@ body {
   margin: var(--category-gutter);
 }
 
+.category li:hover a {
+  background-color: #191b1c;
+}
+
 .category a {
   display: block;
   font-size: 1.4rem;
@@ -623,6 +637,7 @@ body {
   background-color: #0f0f0f;
   color: currentColor;
   text-decoration: none;
+  transition: background-color .2s ease-in-out;
 }
 
 .form__body {

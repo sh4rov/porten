@@ -3,7 +3,8 @@
   flex-flow: column nowrap;
 
   &__item {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     text-decoration: none;
 
     &:hover {

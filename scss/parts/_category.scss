@@ -1,5 +1,6 @@
 .category {
   --category-gutter: 10px;
+
   ul {
     list-style: none;
     display: flex;
@@ -11,6 +12,10 @@
     margin: var(--category-gutter);
   }
 
+  li:hover a {
+    background-color: #191b1c;
+  }
+
   a {
     display: block;
     font-size: 1.4rem;
@@ -18,5 +23,6 @@
     background-color: #0f0f0f;
     color: currentColor;
     text-decoration: none;
+    transition: background-color .2s ease-in-out;
   }
 }
