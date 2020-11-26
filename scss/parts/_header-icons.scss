@@ -1,0 +1,13 @@
+.header-icons {
+  margin-left: 20px;
+  @extend .nav__list;
+
+  &__link {
+    padding: 3rem 2rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__link:hover {
+    @extend .nav__link:hover;
+  }
+}

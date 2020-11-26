@@ -5,8 +5,17 @@
     padding-top: 14px;
     padding-bottom: 14px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-flow: column;
+
+      .top-line-info {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
@@ -71,6 +80,7 @@
 
   &__item {
     flex: 1;
+    line-height: 1;
   }
 
   &__item_login::after {

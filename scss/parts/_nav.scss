@@ -1,4 +1,10 @@
 .nav {
+  margin-left: auto;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -18,20 +24,6 @@
       color: currentColor;
       background-color: #1f1f1f;
     }
-  }
-
-  &__sub-list {
-    margin-left: 20px;
-    @extend .nav__list;
-  }
-
-  &__sub-link {
-    padding: 3rem 2rem;
-    transition: all 0.2s ease-in-out;
-  }
-
-  &__sub-link:hover {
-    @extend .nav__link:hover;
   }
 
   &__icon {

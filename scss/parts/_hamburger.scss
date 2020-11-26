@@ -1,0 +1,19 @@
+.hamburger {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  &__icon {
+    stroke: #fff;
+  }
+
+  &.is-active .mobile-nav {
+    transform: scale(1, 1)
+  }
+}

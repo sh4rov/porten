@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: $text-size;
+  height: 100%;
 }
 
 *, ::before, ::after {
@@ -15,6 +16,10 @@ body {
   color: $text-clr-primary;
   font-size: 1.6rem;
   line-height: 1.3;
+}
+
+.page {
+  position: relative;
 }
 
 .container {
