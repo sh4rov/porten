@@ -104,6 +104,19 @@
   line-height: 0;
 }
 
+.menu-close {
+  line-height: 0;
+  border: none;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #191b1c;
+}
+
 .lock {
   overflow: hidden;
+}
+
+body.lock .mobile-nav {
+  transform: translateX(0);
 }

@@ -48,7 +48,11 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .main-logo { line-height: 0; }
 
+.menu-close { line-height: 0; border: none; cursor: pointer; padding: 30px; border-radius: 50%; background-color: #191b1c; }
+
 .lock { overflow: hidden; }
+
+body.lock .mobile-nav { transform: translateX(0); }
 
 .top-line { background-color: #000; }
 
@@ -109,13 +113,23 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .header-icons__link { padding: 3rem 2rem; transition: all 0.2s ease-in-out; }
 
-.mobile-nav { position: absolute; top: 0; right: 0; left: 0; bottom: 0; transition: transform .3s ease-in-out; z-index: 99; }
+.mobile-nav { position: absolute; top: 0; right: 0; left: 0; bottom: 0; height: 100vh; transform: translateX(-100%); transition: transform .3s ease-in-out; z-index: 99; background-color: rgba(0, 0, 0, 0.8); }
 
-.mobile-nav__list { flex-direction: column; height: 100%; background-color: #0f0f0f; }
+.mobile-nav__inner { position: relative; max-width: 400px; padding: 60px 40px; height: 100%; background-color: #0f0f0f; }
 
-.mobile-nav__list li { display: flex; justify-content: center; }
+.mobile-nav__header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 40px; }
 
-.mobile-nav_open .mobile-nav { transform: scale(1, 1); }
+.mobile-nav__list { flex-direction: column; }
+
+.mobile-nav__item { list-style: none; }
+
+.mobile-nav__link { display: inline-block; padding: .75em 2rem; font-size: 2.5rem; text-decoration: none; text-transform: uppercase; color: #989898; transition: all .3s ease-in-out; transform: translateX(0); border-radius: 5px; }
+
+.mobile-nav__link:hover { background-color: #1f1f1f; border-left-color: #989898; }
+
+.mobile-nav__icons { vertical-align: middle; appearance: none; }
+
+.mobile-nav__close { position: absolute; left: 50%; transform: translateX(-50%); top: 500px; stroke: #fff; }
 
 .hamburger { display: inline-block; background-color: transparent; border: none; cursor: pointer; line-height: 0; }
 
