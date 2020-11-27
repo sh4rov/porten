@@ -1,6 +1,11 @@
 .collections-preview {
   position: relative;
   overflow: hidden;
+  display: none;
+
+  @media (min-width: 1201px) {
+    display: block;
+  }
 
   &::after {
     @include absolute-stretch;

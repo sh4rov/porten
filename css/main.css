@@ -759,7 +759,7 @@ body.lock .mobile-nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 0 150px 0;
+  padding: 150px 0 150px 0;
   background-image: url("../img/new-collection-bg.jpg");
   background: -webkit-gradient(linear, left top, right top, from(rgba(15, 15, 15, 0.5)), to(rgba(15, 15, 15, 0.5))), url("../img/new-collection-bg.jpg");
   background: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/new-collection-bg.jpg");
@@ -809,6 +809,13 @@ body.lock .mobile-nav {
 .collections-preview {
   position: relative;
   overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .collections-preview {
+    display: block;
+  }
 }
 
 .collections-preview::after {
