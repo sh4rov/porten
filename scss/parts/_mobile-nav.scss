@@ -7,7 +7,8 @@
   height: 100%;
   width: 100%;
   transform: translateX(-100%);
-  transition: transform .3s ease-in-out;
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
   z-index: 99;
   background-color: rgba(0, 0, 0, .8);
 
@@ -64,11 +65,14 @@
 
   &__authorization {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 
   &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
     stroke: #fff;
-    align-self: center;
+    padding: 10px;
   }
 }

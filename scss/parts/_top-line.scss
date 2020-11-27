@@ -2,6 +2,7 @@
   background-color: #000;
 
   &__inner {
+    min-height: 48px;
     padding-top: 14px;
     padding-bottom: 14px;
     display: flex;
@@ -11,10 +12,6 @@
 
     @media (max-width: 768px) {
       flex-flow: column;
-
-      .top-line-info {
-        margin-bottom: 10px;
-      }
     }
   }
 }
@@ -72,6 +69,10 @@
 .top-line-user {
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   &__icon {
     margin-right: 10px;

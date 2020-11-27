@@ -108,9 +108,7 @@
   line-height: 0;
   border: none;
   cursor: pointer;
-  padding: 30px;
-  border-radius: 50%;
-  background-color: #191b1c;
+  background-color: transparent;
 }
 
 .lock {
@@ -120,4 +118,5 @@
 
 body.lock .mobile-nav {
   transform: translateX(0);
+  opacity: 1;
 }
