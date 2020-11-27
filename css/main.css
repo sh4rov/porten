@@ -155,6 +155,7 @@ body {
 
 .lock {
   overflow: hidden;
+  padding-right: 15px;
 }
 
 body.lock .mobile-nav {
@@ -268,6 +269,11 @@ body.lock .mobile-nav {
   right: 0;
   left: 0;
   z-index: 99;
+  transition: all .2s ease-in-out;
+}
+
+.header_hide {
+  transform: translateY(-48px);
 }
 
 .header__container {
@@ -326,12 +332,13 @@ body.lock .mobile-nav {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   transform: translateX(-100%);
   transition: transform .3s ease-in-out;
   z-index: 99;
@@ -340,6 +347,9 @@ body.lock .mobile-nav {
 
 .mobile-nav__inner {
   position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
   max-width: 400px;
   padding: 60px 40px;
   height: 100%;
@@ -351,11 +361,13 @@ body.lock .mobile-nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 .mobile-nav__list {
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .mobile-nav__item {
@@ -384,12 +396,25 @@ body.lock .mobile-nav {
   appearance: none;
 }
 
+.mobile-nav__authorization {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
 .mobile-nav__close {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 500px;
   stroke: #fff;
+  align-self: center;
+}
+
+.authorization__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: currentColor;
+  font-size: 2.5rem;
+}
+
+.authorization__link_log {
+  margin-right: 1em;
 }
 
 .hamburger {

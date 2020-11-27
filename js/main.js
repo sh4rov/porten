@@ -35,7 +35,6 @@ const menuIcon = document.querySelector('.js-menu-icon')
 const menuClose = document.querySelector('.js-close-icon')
 const body = document.body
 
-
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.add('is-active')
   body.classList.add('lock')
@@ -45,3 +44,19 @@ menuClose.addEventListener('click', () => {
   menuIcon.classList.remove('is-active')
   body.classList.remove('lock')
 } )
+
+
+const header = document.querySelector('.header')
+const hideHeader = 'header_hide'
+const lastScrollTop = 0;
+
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.scrollY = document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    header.classList.add(hideHeader)
+  } else {
+    header.classList.remove(hideHeader)
+  }
+  lastScrollTop = scrollTop;
+})

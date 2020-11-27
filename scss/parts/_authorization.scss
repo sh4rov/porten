@@ -1,0 +1,11 @@
+.authorization {
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: currentColor;
+    font-size: 2.5rem;
+  }
+
+  &__link_log { margin-right: 1em }
+}
