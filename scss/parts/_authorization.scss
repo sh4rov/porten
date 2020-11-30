@@ -1,21 +1,32 @@
 .authorization {
 
   &__link {
+    display: inline-block;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: currentColor;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     transition: color .3s ease-in-out;
+    padding: 1em;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    padding: .5em 1em;
+    transition: text-shadow .3s ease;
+    border-width: 2px;
+    border-style: solid;
   }
 
-  &__link_log:hover {
-    color: green;
+  &__link_log {
+    background-color: #39b67d;
+    margin-right: 1em;
+    border-color: transparent;
   }
-  &__link_reg:hover {
+
+  &__link_reg {
     color: $text-clr-second;
+    border-color: currentColor;
+    background-color: transparent;
   }
-
-  &__link_log { margin-right: 1em }
 }

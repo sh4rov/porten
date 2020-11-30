@@ -6,6 +6,12 @@
   z-index: 99;
   transition: all .2s ease-in-out;
   
+  // &_hide {
+  //   @include mq-up(481px) {
+  //     transform: translateY(-48px);
+  //   }
+  // }
+
   &_hide {
     transform: translateY(-48px);
   }
@@ -17,8 +23,11 @@
     min-height: 78px;
   }
 
-  &__bottom {
-    
-    background-color: #0f0f0f;
+  &__bottom { background-color: #0f0f0f; }
+
+  &__logo {
+    @include mq-down(400px) {
+      display: none;
+    }
   }
 }

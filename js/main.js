@@ -1,10 +1,12 @@
+(() => {
+
 const swiperParams = {
   slidesPerView: 1,
   loop: true,
 
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 
   breakpoints: {
     540: {
@@ -50,13 +52,22 @@ const header = document.querySelector('.header')
 const hideHeader = 'header_hide'
 const lastScrollTop = 0;
 
-
-window.addEventListener('scroll', () => {
+// Скрываем часть хедера.
+function hiddenTopLine() {
   let scrollTop = window.scrollY = document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
     header.classList.add(hideHeader)
   } else {
     header.classList.remove(hideHeader)
   }
-  lastScrollTop = scrollTop;
-})
+}
+
+// Если ширина окна больше 480px, то выполняем функцию hiddenTopLine
+function handleEvent() {
+  if (window.innerWidth > 480) hiddenTopLine()
+}
+
+// При скроле выполняем функцию handleEvent
+window.addEventListener('scroll', handleEvent)
+
+})()

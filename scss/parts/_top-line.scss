@@ -1,6 +1,10 @@
 .top-line {
   background-color: #000;
 
+  @include mq-down(480px) {
+    display: none;
+  }
+
   &__inner {
     min-height: 48px;
     padding-top: 14px;
@@ -39,6 +43,7 @@
 }
 
 .top-line-info {
+
   &__icon {
     margin-right: 15px;
     font-size: 1.6rem;

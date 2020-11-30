@@ -42,6 +42,10 @@
 
 .content {
   padding-top: 126px;
+
+  @include mq-down(480px) {
+    padding-top: 83px;
+  }
 }
 
 .btn {
@@ -52,10 +56,11 @@
   font-size: 1.8rem;
   text-transform: uppercase;
   border: 1px solid currentColor;
-  transition: border .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
-    border: 1px solid transparent;
+    background-color: #1f1f1f;
+    border-color: transparent;
   }
 }
 
