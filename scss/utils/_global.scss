@@ -116,12 +116,6 @@
   background-color: transparent;
 }
 
-.lock {
-  overflow: hidden;
-  padding-right: 15px;
-}
-
-body.lock .mobile-nav {
-  transform: translateX(0);
-  opacity: 1;
-}
+.lock { overflow: hidden; }
+.lock .page,
+.lock .header__bottom { padding-right: 15px; }

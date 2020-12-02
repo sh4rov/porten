@@ -189,23 +189,17 @@ body {
 
 .lock {
   overflow: hidden;
-  padding-right: 15px;
 }
 
-body.lock .mobile-nav {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
+.lock .page,
+.lock .header__bottom {
+  padding-right: 15px;
 }
 
 .top-line {
   background-color: #000;
-}
-
-@media (max-width: 480px) {
-  .top-line {
-    display: none;
-  }
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .top-line__inner {
@@ -345,9 +339,15 @@ body.lock .mobile-nav {
   transition: all .2s ease-in-out;
 }
 
-.header_hide {
+.header.header_hide {
   -webkit-transform: translateY(-48px);
           transform: translateY(-48px);
+}
+
+@media (max-width: 480px) {
+  .header:not(.header_hide) .top-line {
+    display: none;
+  }
 }
 
 .header__container {
@@ -424,26 +424,17 @@ body.lock .mobile-nav {
 }
 
 .mobile-nav {
-  position: fixed;
+  visibility: hidden;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  opacity: 0;
-  -webkit-transition: opacity .3s, -webkit-transform .3s;
-  transition: opacity .3s, -webkit-transform .3s;
-  transition: transform .3s, opacity .3s;
-  transition: transform .3s, opacity .3s, -webkit-transform .3s;
-  z-index: 99;
-  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
 
 .mobile-nav__inner {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +448,15 @@ body.lock .mobile-nav {
   max-width: 400px;
   padding: 60px 40px;
   height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s, -webkit-transform .3s;
   background-color: #0f0f0f;
+  will-change: transform;
 }
 
 .mobile-nav__header {
@@ -520,6 +519,17 @@ body.lock .mobile-nav {
   right: 0;
   stroke: #fff;
   padding: 10px;
+}
+
+.lock .mobile-nav {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lock .mobile-nav__inner {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .authorization__link {

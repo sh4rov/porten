@@ -6,15 +6,17 @@
   z-index: 99;
   transition: all .2s ease-in-out;
   
-  // &_hide {
-  //   @include mq-up(481px) {
-  //     transform: translateY(-48px);
-  //   }
-  // }
-
-  &_hide {
+  &.header_hide {
     transform: translateY(-48px);
   }
+
+  &:not(.header_hide) .top-line {
+    @include mq-down(480px) {
+      display: none;
+    }
+  }
+
+  
 
   &__container {
     display: flex;

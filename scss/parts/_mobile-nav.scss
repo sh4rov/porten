@@ -1,26 +1,26 @@
 .mobile-nav {
-  position: fixed;
+  visibility: hidden;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
-  width: 100%;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform .3s, opacity .3s;
-  z-index: 99;
-  background-color: rgba(0, 0, 0, .8);
+  z-index: 1000;
+  
 
   &__inner {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     max-width: 400px;
     padding: 60px 40px;
     height: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
     background-color: $bg-color-nav;
+    will-change: transform;
   }
 
   &__header {
@@ -74,4 +74,14 @@
     stroke: #fff;
     padding: 10px;
   }
+}
+
+.lock .mobile-nav {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.lock .mobile-nav__inner {
+  transform: translateX(0);
+  opacity: 1;
 }

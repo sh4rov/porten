@@ -50,7 +50,13 @@ menuClose.addEventListener('click', () => {
 
 const header = document.querySelector('.header')
 const hideHeader = 'header_hide'
-const lastScrollTop = 0;
+const lastScrollTop = 0
+
+
+// удаляем модификатор .header_hide
+function delHideClass() {
+  header.classList.remove(hideHeader)
+}
 
 // Скрываем часть хедера.
 function hiddenTopLine() {
@@ -58,13 +64,18 @@ function hiddenTopLine() {
   if (scrollTop > lastScrollTop) {
     header.classList.add(hideHeader)
   } else {
-    header.classList.remove(hideHeader)
+    delHideClass()
   }
 }
 
 // Если ширина окна больше 480px, то выполняем функцию hiddenTopLine
 function handleEvent() {
-  if (window.innerWidth > 480) hiddenTopLine()
+  if (window.innerWidth > 480) {
+    hiddenTopLine()
+  }
+  else if(window.innerWidth < 481) {
+    delHideClass()
+  }
 }
 
 // При скроле выполняем функцию handleEvent

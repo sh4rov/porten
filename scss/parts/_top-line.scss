@@ -1,9 +1,10 @@
 .top-line {
   background-color: #000;
+  transition: opacity 200ms ease-in-out;
 
-  @include mq-down(480px) {
-    display: none;
-  }
+  // @include mq-down(480px) {
+  //   display: none;
+  // }
 
   &__inner {
     min-height: 48px;
