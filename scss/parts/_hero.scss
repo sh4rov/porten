@@ -33,7 +33,7 @@
   }
 
   &__img-box {
-    min-width: 18.5rem;
+    min-width:  185px;
     align-self: center;
     border-bottom: 2px solid #fff;
   }
@@ -49,8 +49,19 @@
   }
 
   &__text {
-    max-width: 73rem;
+    max-width: 730px;
     text-transform: uppercase;
+    font-size: 1.6rem;
     text-align: center;
+    transition: max-width, padding .3s ease-in-out;
+
+    @include mq-down(992px) {
+      max-width: 500px;
+    }
+
+    @include mq-down(480px) {
+      font-size: 1.4rem;
+    }
+    
   }
 }

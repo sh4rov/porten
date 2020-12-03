@@ -6,7 +6,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%;
 
 body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; font-size: 1.6rem; line-height: 1.3; }
 
-.page { position: relative; }
+.page { position: relative; overflow: hidden; }
 
 .container { max-width: var(--container-size); padding-left: var(--container-ident); padding-right: var(--container-ident); margin-left: auto; margin-right: auto; }
 
@@ -124,7 +124,7 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 .mobile-nav { visibility: hidden; position: absolute; top: 0; right: 0; left: 0; bottom: 0; z-index: 1000; }
 
-.mobile-nav__inner { position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; max-width: 400px; padding: 60px 40px; height: 100%; -webkit-transform: translateX(-100%); transform: translateX(-100%); opacity: 0; -webkit-transition: opacity .3s, -webkit-transform .3s; transition: opacity .3s, -webkit-transform .3s; transition: transform .3s, opacity .3s; transition: transform .3s, opacity .3s, -webkit-transform .3s; background-color: #0f0f0f; will-change: transform; }
+.mobile-nav__inner { position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; max-width: 500px; min-width: 320px; padding: 60px 40px; height: 100%; -webkit-transform: translateX(-100%); transform: translateX(-100%); opacity: 0; -webkit-transition: opacity .3s, -webkit-transform .3s; transition: opacity .3s, -webkit-transform .3s; transition: transform .3s, opacity .3s; transition: transform .3s, opacity .3s, -webkit-transform .3s; background-color: #0f0f0f; will-change: transform; }
 
 .mobile-nav__header { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; margin-bottom: 40px; }
 
@@ -166,13 +166,17 @@ body { font-family: "PT Sans", sans-serif; background-color: #000; color: #fff; 
 
 @media (max-width: 768px) { .hero__logo { padding: 5rem 3rem; } }
 
-.hero__img-box { min-width: 18.5rem; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; border-bottom: 2px solid #fff; }
+.hero__img-box { min-width: 185px; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; border-bottom: 2px solid #fff; }
 
 .hero__img { width: 100%; max-width: 100%; }
 
 .hero__title { font-size: 2.2rem; text-transform: uppercase; }
 
-.hero__text { max-width: 73rem; text-transform: uppercase; text-align: center; }
+.hero__text { max-width: 730px; text-transform: uppercase; font-size: 1.6rem; text-align: center; -webkit-transition: max-width, padding .3s ease-in-out; transition: max-width, padding .3s ease-in-out; }
+
+@media (max-width: 992px) { .hero__text { max-width: 500px; } }
+
+@media (max-width: 480px) { .hero__text { font-size: 1.4rem; } }
 
 .new-season { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; padding: 60px 55px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; overflow-x: hidden; }
 
